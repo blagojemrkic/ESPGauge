@@ -1,3 +1,7 @@
 [submodule "main/libraries/TFT_eSPI"]
 	path = main/libraries/TFT_eSPI
 	url = git@github.com:Bodmer/TFT_eSPI.git
+[submodule "main/libraries/lvgl"]
+	path = main/libraries/lvgl
+	url = git@github.com:lvgl/lvgl.git
+	branch = release/v8.3

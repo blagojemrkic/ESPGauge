@@ -2,11 +2,14 @@ SET(SOURCES ui_Screen1.c
     ui.c
     ui_comp_hook.c
     ui_helpers.c
+    ui_img_bg2_png.c
+    ui_img_rmp3_png.c
     ui_img_path25_png.c
     ui_img_path19_png.c
     ui_img_path15_png.c
     ui_img_2122316114.c
     ui_img_image1_png.c
-    ui_img_path17_png.c)
+    ui_img_path17_png.c
+    ui_img_speed2_png.c)
 
 add_library(ui ${SOURCES})

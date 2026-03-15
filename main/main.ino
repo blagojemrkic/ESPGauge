@@ -16,10 +16,12 @@ Initilaze ESP32 board with basic Serial communication.
 extern lv_obj_t * ui_Screen1;
 extern lv_obj_t * ui_RMPgauge;
 extern lv_obj_t * ui_SpeedGauge;
+extern lv_obj_t * ui_SpeedGauge2;
 extern lv_obj_t * ui_SpeedLable;
 extern lv_obj_t * ui_RPMLable;
 extern lv_obj_t * ui_RPMunit;
 extern lv_obj_t * ui_SpeedUnit;
+
 
 extern lv_obj_t * ui_yellowBatWarrinig;
 extern lv_obj_t * ui_redBatWarring;
@@ -205,7 +207,18 @@ void update_speed_value(int * current_speed){
     }
   }
   lv_arc_set_value(ui_SpeedGauge, *current_speed);
+
+
+  lv_img_set_angle(ui_SpeedGauge2, map(*current_speed, 0, 165, -750, 2550));
+  // 0:-750 = 165 : +2550
+
+  // y-y1 = y2-y1/ x2-x1  x-x1
+  // y = 0.05*x+37.5 speed quation  
+
+  //map(x, -750, 2550, 0, 165);
 }
+
+
 
 void update_speed_text (const int *current_speed){
   // update ui_SpeedLable with text 

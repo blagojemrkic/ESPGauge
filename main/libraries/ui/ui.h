@@ -30,18 +30,22 @@ extern lv_obj_t * ui_yellowOilWarrning;
 extern lv_obj_t * ui_redOilWarring;
 extern lv_obj_t * ui_yellowEngineWarrning;
 extern lv_obj_t * ui_redEngineWarrning;
+extern lv_obj_t * ui_SpeedGauge2;
 // CUSTOM VARIABLES
 
 // EVENTS
 extern lv_obj_t * ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
+LV_IMG_DECLARE(ui_img_bg2_png);    // assets/bg2.png
+LV_IMG_DECLARE(ui_img_rmp3_png);    // assets/rmp3.png
 LV_IMG_DECLARE(ui_img_path25_png);    // assets/path25.png
 LV_IMG_DECLARE(ui_img_path19_png);    // assets/path19.png
 LV_IMG_DECLARE(ui_img_path15_png);    // assets/path15.png
 LV_IMG_DECLARE(ui_img_2122316114);    // assets/image1-2.png
 LV_IMG_DECLARE(ui_img_image1_png);    // assets/image1.png
 LV_IMG_DECLARE(ui_img_path17_png);    // assets/path17.png
+LV_IMG_DECLARE(ui_img_speed2_png);    // assets/speed2.png
 
 // UI INIT
 void ui_init(void);

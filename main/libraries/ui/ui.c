@@ -24,15 +24,19 @@ lv_obj_t * ui_yellowOilWarrning;
 lv_obj_t * ui_redOilWarring;
 lv_obj_t * ui_yellowEngineWarrning;
 lv_obj_t * ui_redEngineWarrning;
+lv_obj_t * ui_SpeedGauge2;
 // CUSTOM VARIABLES
 
 // EVENTS
 lv_obj_t * ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
-const lv_img_dsc_t * ui_imgset_path[4] = {&ui_img_path25_png, &ui_img_path19_png, &ui_img_path17_png, &ui_img_path15_png};
-const lv_img_dsc_t * ui_imgset_image[1] = {&ui_img_image1_png};
 const lv_img_dsc_t * ui_imgset_577974907[1] = {&ui_img_2122316114};
+const lv_img_dsc_t * ui_imgset_image[1] = {&ui_img_image1_png};
+const lv_img_dsc_t * ui_imgset_path[4] = {&ui_img_path15_png, &ui_img_path17_png, &ui_img_path19_png, &ui_img_path25_png};
+const lv_img_dsc_t * ui_imgset_bg[1] = {&ui_img_bg2_png};
+const lv_img_dsc_t * ui_imgset_speed[1] = {&ui_img_speed2_png};
+const lv_img_dsc_t * ui_imgset_rmp[1] = {&ui_img_rmp3_png};
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
